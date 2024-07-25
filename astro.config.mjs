@@ -37,7 +37,7 @@ export default defineConfig({
             },
             HTML: true,
             JavaScript: true,
-            SVG: true
+            SVG: false
         }),
         compressor(),
         solidJs(),

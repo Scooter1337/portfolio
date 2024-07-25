@@ -18,27 +18,30 @@ const projects = (await getCollection("projects"))
   .slice(0,3)
 
 const stack = [
-  { 
-    text: "Astro", 
-    icon: "astro", 
-    href: "https://astro.build" 
+  {
+    text: "Astro",
+    icon: "astro",
+    href: "https://astro.build"
   },
-  { 
-    text: "Javascript", 
-    icon: "javascript", 
-    href: "https://www.javascript.com" 
+  {
+    text: "Javascript",
+    icon: "javascript",
+    href: "https://www.javascript.com"
   },
-  { 
-    text: "Typescript", 
-    icon: "typescript", 
-    href: "https://www.typescriptlang.org" 
+  {
+    text: "Typescript",
+    icon: "typescript",
+    href: "https://www.typescriptlang.org"
   },
-  { 
-    text: "Tailwind", 
-    icon: "tailwind", 
-    href: "https://tailwindcss.com" 
+  {
+    text: "Tailwind",
+    icon: "tailwind",
+    href: "https://tailwindcss.com"
   },
 ]
+
+const baseUrl =
+  import.meta.env.BASE_URL === "/" ? "" : import.meta.env.BASE_URL;
 ---
 
 <PageLayout title="Home" description={SITE.DESCRIPTION}>
@@ -65,8 +68,8 @@ const stack = [
     </div>
   </div>
 
-  <script is:inline src="/js/bg.js"></script>
-  
+  <script is:inline src={baseUrl + "/js/bg.js"}></script>
+
   <!-- HERO -->
   <section class="relative h-screen w-full">
     <div id="planetcont" class='animate absolute inset-0 top-1/4 overflow-hidden'>
@@ -89,10 +92,10 @@ const stack = [
             Currently designing products for humans.
           </p>
           <div id="ctaButtons" class='animated flex flex-wrap gap-4 justify-center mt-5'>
-            <a href='/blog' class='py-2 px-4 rounded truncate text-xs md:text-sm lg:text-base bg-black dark:bg-white text-white dark:text-black hover:opacity-75 blend'>
+            <a href={baseUrl + '/blog'} class='py-2 px-4 rounded truncate text-xs md:text-sm lg:text-base bg-black dark:bg-white text-white dark:text-black hover:opacity-75 blend'>
               Read my blog
             </a>
-            <a href='/work' class='py-2 px-4 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend'>
+            <a href={baseUrl + '/work'} class='py-2 px-4 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend'>
               View my work
             </a>
           </div>
@@ -123,7 +126,7 @@ const stack = [
             <p class="font-semibold text-black dark:text-white">
               Recent posts
             </p>
-            <a href="/blog" class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
+            <a href={baseUrl + "/blog"} class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
               <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
                 All posts
               </span>
@@ -147,7 +150,7 @@ const stack = [
           </p>
           <div class="flex flex-wrap items-center gap-2 mt-5">
             {stack.map(item => (
-              <StackCard 
+              <StackCard
                 text={item.text}
                 icon={item.icon}
                 href={item.href}
@@ -172,7 +175,7 @@ const stack = [
             <p class="font-semibold text-black dark:text-white">
               Recent projects
             </p>
-            <a href="/projects" class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
+            <a href={baseUrl + "/projects"} class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
               <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
                 All projects
               </span>

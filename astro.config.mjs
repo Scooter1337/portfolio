@@ -13,23 +13,32 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://scooter1337.github.io',
-//   base: 'portfolio',
+    site: 'https://scooter1337.github.io',
+    base: process.env.NODE_ENV === 'development' ? '' : 'portfolio',
     prefetch: {
-      defaultStrategy: 'load',
-      prefetchAll: true
+        defaultStrategy: 'load',
+        prefetchAll: true
     },
-  integrations: [
-  // partytown(),
-  svelte(), sitemap(), markdoc(), tailwind({ applyBaseStyles: false }), robotsTxt(), compress({
-    CSS: {
-      csso: true,
-      lightningcss: {
-        minify: true
-      }
-    },
-    HTML: true,
-    JavaScript: true,
-    SVG: true
-  }), compressor(), solidJs(), mdx()]
+    integrations: [
+        // partytown(),
+        svelte(),
+        sitemap(),
+        markdoc(),
+        tailwind({ applyBaseStyles: false }),
+        robotsTxt(),
+        compress({
+            CSS: {
+                csso: true,
+                lightningcss: {
+                    minify: true
+                }
+            },
+            HTML: true,
+            JavaScript: true,
+            SVG: true
+        }),
+        compressor(),
+        solidJs(),
+        mdx()
+    ]
 });

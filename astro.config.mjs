@@ -15,6 +15,7 @@ import mdx from "@astrojs/mdx";
 export default defineConfig({
     site: 'https://scooter1337.github.io',
     base: process.env.NODE_ENV === 'development' ? '' : 'portfolio',
+
     prefetch: {
         defaultStrategy: 'load',
         prefetchAll: true

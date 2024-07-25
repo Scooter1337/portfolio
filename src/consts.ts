@@ -1,5 +1,8 @@
 import type { Site, Page, Links, Socials } from "@types"
 
+const baseUrl =
+  import.meta.env.BASE_URL === "/" ? "" : import.meta.env.BASE_URL;
+
 // Global
 export const SITE: Site = {
   TITLE: "Astro Sphere",
@@ -19,7 +22,7 @@ export const BLOG: Page = {
   DESCRIPTION: "Writing on topics I am passionate about.",
 }
 
-// Projects Page 
+// Projects Page
 export const PROJECTS: Page = {
   TITLE: "Projects",
   DESCRIPTION: "Recent projects I have worked on.",
@@ -33,49 +36,49 @@ export const SEARCH: Page = {
 
 // Links
 export const LINKS: Links = [
-  { 
-    TEXT: "Home", 
-    HREF: "/", 
+  {
+    TEXT: "Home",
+    HREF: baseUrl + "/",
   },
-  { 
-    TEXT: "Work", 
-    HREF: "/work", 
+  {
+    TEXT: "Work",
+    HREF: baseUrl + "/work",
   },
-  { 
-    TEXT: "Blog", 
-    HREF: "/blog", 
+  {
+    TEXT: "Blog",
+    HREF: baseUrl + "/blog",
   },
-  { 
-    TEXT: "Projects", 
-    HREF: "/projects", 
+  {
+    TEXT: "Projects",
+    HREF: baseUrl + "/projects",
   },
 ]
 
 // Socials
 export const SOCIALS: Socials = [
-  { 
+  {
     NAME: "Email",
-    ICON: "email", 
-    TEXT: "markhorn.dev@gmail.com",
-    HREF: "mailto:markhorn.dev@gmail.com",
+    ICON: "email",
+    TEXT: "lucav007@hotmail.com",
+    HREF: "mailto:lucav007@hotmail.com",
   },
-  { 
+  {
     NAME: "Github",
     ICON: "github",
-    TEXT: "markhorn-dev",
-    HREF: "https://github.com/markhorn-dev/astro-sphere"
+    TEXT: "Scooter1337",
+    HREF: "https://github.com/scooter1337",
   },
-  { 
+  {
     NAME: "LinkedIn",
     ICON: "linkedin",
-    TEXT: "markhorn-dev",
-    HREF: "https://www.linkedin.com/in/markhorn-dev/",
+    TEXT: "Luca Verheul",
+    HREF: "https://www.linkedin.com/in/lucaadrianusverheul/",
   },
-  { 
-    NAME: "Twitter",
-    ICON: "twitter-x",
-    TEXT: "markhorn_dev",
-    HREF: "https://twitter.com/markhorn_dev",
-  },
+  // {
+  //   NAME: "Twitter",
+  //   ICON: "twitter-x",
+  //   TEXT: "markhorn_dev",
+  //   HREF: "https://twitter.com/markhorn_dev",
+  // },
 ]
 

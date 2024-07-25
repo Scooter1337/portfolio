@@ -14,7 +14,8 @@ import mdx from "@astrojs/mdx";
 // https://astro.build/config
 export default defineConfig({
     site: 'https://scooter1337.github.io',
-    base: process.env.NODE_ENV === 'development' ? '' : 'portfolio',
+    base: process.env.NODE_ENV === 'development' ? undefined : 'portfolio',
+    trailingSlash: 'never',
 
     prefetch: {
         defaultStrategy: 'load',

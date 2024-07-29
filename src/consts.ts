@@ -12,7 +12,7 @@ export const SITE: Site = {
 
 // Work Page
 export const WORK: Page = {
-  TITLE: "CV",
+  TITLE: "Curriculum Vitae",
   DESCRIPTION: "Curriculum Vitae",
 }
 
@@ -41,8 +41,8 @@ export const LINKS: Links = [
     HREF: baseUrl + "/",
   },
   {
-    TEXT: "Work",
-    HREF: baseUrl + "/work",
+    TEXT: "CV",
+    HREF: baseUrl + "/cv",
   },
   {
     TEXT: "Blog",

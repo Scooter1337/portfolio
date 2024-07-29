@@ -10,6 +10,7 @@ tags:
 - Svelte
 - Node.js
 - Fastify
+- PostgreSQL
 ---
 
 ### Project
@@ -21,3 +22,5 @@ Written in Svelte using SvelteKit as a server and TailwindCSS for styling.
 
 ### Backend
 The backend is written in Node.js, using the Fastify framework. A single 1vCPU instance can handle >9,000 requests per second.
+
+### Images

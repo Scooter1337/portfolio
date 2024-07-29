@@ -10,7 +10,7 @@ import ArticleBottomLayout from "@layouts/ArticleBottomLayout.astro";
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
   return posts
-    .filter((post) => !post.data.draft)
+    .filter((post) => !post.data.draft) // Filter out drafts
     .map((post) => ({
       params: { slug: post.slug },
       props: post,

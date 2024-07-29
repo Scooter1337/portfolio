@@ -2,7 +2,7 @@
 title: "Astro Sphere: Writing Markdown"
 summary: "Basic Markdown syntax that can be used when writing Markdown content in Astro Sphere."
 date: "Mar 13 2024"
-draft: false
+draft: true
 tags:
 - Tutorial
 - Astro
@@ -72,13 +72,13 @@ The blockquote element represents content that is quoted from another source, op
 #### Syntax
 
 ```markdown
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
+> Tiam, ad mint andaepu dandae nostion secatur sequo quae.
 > **Note** that you can use _Markdown syntax_ within a blockquote.
 ```
 
 #### Output
 
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
+> Tiam, ad mint andaepu dandae nostion secatur sequo quae.
 > **Note** that you can use _Markdown syntax_ within a blockquote.
 
 ### Blockquote with attribution

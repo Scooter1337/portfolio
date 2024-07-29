@@ -5,21 +5,21 @@ const baseUrl =
 
 // Global
 export const SITE: Site = {
-  TITLE: "Astro Sphere",
-  DESCRIPTION: "Welcome to Astro Sphere, a portfolio and blog for designers and developers.",
-  AUTHOR: "Mark Horn",
+  TITLE: "Luca's Portfolio",
+  DESCRIPTION: "Luca Verheul's personal portfolio.",
+  AUTHOR: "Luca Verheul",
 }
 
 // Work Page
 export const WORK: Page = {
-  TITLE: "Work",
-  DESCRIPTION: "Places I have worked.",
+  TITLE: "CV",
+  DESCRIPTION: "Curriculum Vitae",
 }
 
 // Blog Page
 export const BLOG: Page = {
   TITLE: "Blog",
-  DESCRIPTION: "Writing on topics I am passionate about.",
+  DESCRIPTION: "Recent blog posts.",
 }
 
 // Projects Page
@@ -31,7 +31,7 @@ export const PROJECTS: Page = {
 // Search Page
 export const SEARCH: Page = {
   TITLE: "Search",
-  DESCRIPTION: "Search all posts and projects by keyword.",
+  DESCRIPTION: "Search my portfolio by keyword.",
 }
 
 // Links
@@ -59,8 +59,8 @@ export const SOCIALS: Socials = [
   {
     NAME: "Email",
     ICON: "email",
-    TEXT: "lucav007@hotmail.com",
-    HREF: "mailto:lucav007@hotmail.com",
+    TEXT: "findmeongithub",
+    HREF: "mailto:findmeongithub",
   },
   {
     NAME: "Github",

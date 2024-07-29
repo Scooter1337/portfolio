@@ -2,7 +2,7 @@
 title: "Astro Sphere: Getting Started"
 summary: "You've downloaded and installed the project. Let's hit the ground running."
 date: "Mar 16 2024"
-draft: false
+draft: true
 tags:
 - Tutorial
 - Astro
@@ -73,7 +73,7 @@ The social media links
 
 ```js
 export const SOCIALS: Socials = [
-  { 
+  {
     NAME: "Github",
     ICON: "github",
     TEXT: "markhorn-dev",

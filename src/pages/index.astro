@@ -81,22 +81,19 @@ const baseUrl =
     </div>
     <div class="animate absolute h-full w-full flex items-center justify-center">
       <div class='relative w-full h-full flex items-center justify-center'>
-        <div class='p-5 text-center'>
+        <div class='p-5 text-center flex flex-col justify-center'>
+        <img class="w-[200px] h-[200px] mx-auto rounded-full" alt="L.A. (Luca) Verheul" src="https://media.licdn.com/dms/image/v2/C4E03AQEEn9CVWNtxLg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1608287079490?e=1731542400&v=beta&t=8pSY84HKXSAtx8g6CfWPAAvFmwd3OyYs3PB3_m4F5J4" />
           <p class='animated text-lg md:text-xl lg:text-2xl font-semibold opacity-75'>
-            COMING SOON
+            Software Developer
           </p>
-          <p class='animated text-2xl md:text-3xl lg:text-4xl font-bold uppercase text-black dark:text-white'>
-            COMING SOON
+          <p class='animated text-2xl md:text-3xl lg:text-4xl font-bold text-black dark:text-white'>
+            L.A. (Luca) Verheul
           </p>
           <p class='animated text-sm md:text-base lg:text-lg opacity-75'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum repellendus eligendi iure voluptatem repellat necessitatibus, itaque, rerum corporis sapiente maxime impedit quas nemo quos sint adipisci dolorem libero accusantium consequuntur.
-            Quia quae accusamus et voluptates magnam rem repellendus tenetur reiciendis cum iste modi amet recusandae eos assumenda laborum dignissimos perspiciatis deleniti optio, quam quo qui minima delectus reprehenderit illum. Qui?
+            I am a software engineer with a passion for front- and backend development. I have experience with a wide range of technologies and programming languages. I am a quick learner and I am always looking for new challenges.
           </p>
           <div id="ctaButtons" class='animated flex flex-wrap gap-4 justify-center mt-5'>
-            <a href={baseUrl + '/blog'} class='py-2 px-4 rounded truncate text-xs md:text-sm lg:text-base bg-black dark:bg-white text-white dark:text-black hover:opacity-75 blend'>
-              Read my blog
-            </a>
-            <a href={baseUrl + '/work'} class='py-2 px-4 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend'>
+            <a href={baseUrl + '/projects'} class='py-2 px-4 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend w-[200px]'>
               View my work
             </a>
           </div>
@@ -111,7 +108,6 @@ const baseUrl =
       <!-- About Section -->
       <section class="animate">
         <article>
-          <p>soon</p>
         </article>
       </section>
 
@@ -194,7 +190,7 @@ const baseUrl =
             Let's Connect
           </p>
           <p>
-            Reach out to me via email or on social media.
+            Reach out to me via email, GitHub or on LinkedIn.
           </p>
           <div class="grid grid-cols-4 gap-y-2 mt-4 auto-cols-min">
             {SOCIALS.map(social => (

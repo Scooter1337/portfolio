@@ -42,7 +42,7 @@ export const LINKS: Links = [
   },
   {
     TEXT: "CV",
-    HREF: baseUrl + "/cv",
+    HREF: baseUrl + "/resume.html",
   },
   {
     TEXT: "Blog",
@@ -59,8 +59,8 @@ export const SOCIALS: Socials = [
   {
     NAME: "Email",
     ICON: "email",
-    TEXT: "findmeongithub",
-    HREF: "mailto:findmeongithub",
+    TEXT: "On my CV",
+    HREF: baseUrl + "/resume.html",
   },
   {
     NAME: "Github",
